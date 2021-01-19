@@ -6,7 +6,7 @@ American Computer Science League (ACSL) organizes computer science and programmi
 
 This repo includes the folders labelled, Ninety-Nine, Walk, and Enclosure. This year I competed in the Intermediate division. Keep in mind, a majority of my logic was Brute Force.
 
-### Ninety-Nine
+### [Ninety-Nine](https://www.doralacademyprep.org/ourpages/auto/2017/12/8/54628932/c_1_ninetynine_int%2017_18%20Student.pdf)
 **PROBLEM:** ACSL Ninety-Nine is a two-player card game played with a standard deck of 52-
 cards (2 – 9, T, J, Q, K, A). To start, each player is dealt 3 cards and the remaining cards are
 placed face down on the table (the pile). In an actual game the point total is set to zero, but for
@@ -33,8 +33,8 @@ location (1, 1) is at the upper left hand corner of the array and contains a 0. 
 encounters a 0, he continues in the direction he entered that array location. If he encounters a 1,
 the direction depends on the direction the walker enters that location and the turn value at that
 location. Each 1 location starts out as a 90 degree turn but increases by 90 degrees each time it is
-reentered.
-
+reentered. **See hyperlinked document above for diagram**
+```
 If the walker enters (2, 2) from the Left, 90 degrees is a vertical move up, 180 continues in the
 same direction, 270 degrees is a vertical move down and 360 degrees (or 0 degrees) is a move in
 the opposite direction. See Diagram #1.
@@ -53,4 +53,19 @@ direction. See Diagram #4.
 
 If a cell value directs a walker to a boundary of the array, he is transported to the opposite side of
 the array. Ex. If a move starts at (2, 8) and must go right, then the move will be to (2, 1).
+```
 
+### Enclosure
+**PROBLEM** Given string data input representing a mathematical expression, determine the
+possible location(s) of the missing symbol of enclosure. Although we show spaces between
+characters for readability, the input strings will have no spaces. All operands will be integers
+less than 1000. The order of evaluation for the symbols is parentheses, brackets and then braces. 
+
+**I was only able to find the senior division problem for this but in this case, the intermediate and senior division problems were relatively similar.**
+```
+Given { [ ( 2 + 3 ) * 6 / 10 }. A bracket is missing. It could be correctly placed in several
+locations:
+{ [ ( 2 + 3 ) ] * 6 / 10 } Location 8
+{ [ ( 2 + 3 ) * 6 ] / 10 } Location 10
+{ [ ( 2 + 3 ) * 6 / 10 ] } Location 13
+```
